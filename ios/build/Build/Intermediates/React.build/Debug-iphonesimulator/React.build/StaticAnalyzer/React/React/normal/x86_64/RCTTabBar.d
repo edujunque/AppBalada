@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTTabBar.m \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTTabBar.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTTabBarItem.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTView.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTViewControllerProtocol.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/RCTWrapperViewController.h \
+  /Users/eduardojunque/codigoFonte/AppBalada/node_modules/react-native/React/Views/UIView+React.h
