@@ -10,6 +10,7 @@ import MapView from 'react-native-maps';
 import Rodape from './Rodape'
 import Topo from './Topo'
 import Filtro from './Filtro'
+import BotaoLike from './BotaoLike'
 
 //import { NavigationBar } from '@shoutem/ui/navigation';
 const imgLogo = require('../imgs/logo.png');
@@ -193,7 +194,7 @@ export default class CenaEventoDetalhes extends Component {
                 </View>
                 <View style={styles.botoesInterecaoInterno}>
                   <View>
-                    <Image source={imgLike} style={{width: 35, height: 30, backgroundColor: '#1D1D1D'}}/>
+                    <BotaoLike evID={this.state.evento.evID}/>
                   </View>
                   <View>
                     <Text style={[styles.txtCinzaPequeno, {fontWeight: 'bold', paddingTop: 5}]}>{this.state.evento.evCurtidas}</Text>
@@ -203,15 +204,15 @@ export default class CenaEventoDetalhes extends Component {
                   </View>
                 </View>
                 <View style={styles.botoesInterecaoInterno}>
-                  <View>
-                    <Image source={imgDefaultPhoto} style={{width: 35, height: 30, backgroundColor: '#1D1D1D'}}/>
-                  </View>
-                  <View>
-                    <Text style={[styles.txtCinzaPequeno, {fontWeight: 'bold', paddingTop: 5}]}>{this.state.numEventoFotos}</Text>
-                  </View>
-                  <View>
-                    <Text style={[styles.txtCinzaPequeno,]}>FOTOS</Text>
-                  </View>
+                 <TouchableHighlight style={{flex: 1, margin: 5, borderRadius: 10 }}
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
+                      <Image source={imgDefaultPhoto} style={{width: 35, height: 30, backgroundColor: '#1D1D1D'}}> 
+                            
+                             <Text style={[styles.txtCinzaPequeno, {fontWeight: 'bold', paddingTop: 5}]}>{this.state.numEventoFotos}</Text>
+                            <Text style={[styles.txtCinzaPequeno,]}>FOTOS</Text>
+                      </Image>
+                    </TouchableHighlight>
+                  
                 </View>
                 <View style={styles.botoesInterecaoInterno}>
                   <TouchableOpacity onPress={this.onOpen.bind(this)}>
@@ -271,7 +272,7 @@ export default class CenaEventoDetalhes extends Component {
                         source={{ uri: this.state.evento.eventoFotos[3].photo }}></Image>
                        
                     <TouchableHighlight style={{flex: 1, margin: 5, borderRadius: 10 }}
-                        onPress={() => {Actions.eventogaleriafotos({evID: this.state.evento.evID})}}>
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
                       <Image style={{flex: 1, borderRadius: 10}} 
                             source={{ uri: this.state.evento.eventoFotos[4].photo }}>
                             <Text style={{color: 'white', fontWeight: 'bold'}}>GALERIA</Text>
