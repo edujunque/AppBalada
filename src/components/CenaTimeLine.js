@@ -100,7 +100,7 @@ listarDados(){
           </TouchableHighlight>
          
           
-            <Tile style={{backgroundColor: '#303030', flexDirection: 'row'}}>
+            <View style={{backgroundColor: '#303030', flexDirection: 'row'}}>
               <View style={{alignItems: 'center', justifyContent: 'center', flex : 2, paddingTop: 5}}>
                 <Text style={{fontSize: 26, color:'#737373', fontWeight: 'bold'}}>{this.returnDay(eventos.evData)}</Text>
                 <Text style={{fontSize: 9, color:'#737373', fontWeight: 'bold'}}>{this.returnMonth(eventos.evData)}/
@@ -114,7 +114,7 @@ listarDados(){
               <View style={{ flex : 2, paddingTop: 10}}>
                 <BotaoLike evID={eventos.evID}/>
               </View>
-            </Tile>
+            </View>
           <View style={{flexDirection: 'row', borderTopWidth: 0.2, borderColor: 'white', margin: 10}}>
             <View style={{ flex: 1, marginTop: 10}}>
               <Text style={{color:'white', paddingTop: 5}}>R$ {eventos.eventoPrecos[0].Valor} a </Text>

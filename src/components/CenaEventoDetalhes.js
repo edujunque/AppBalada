@@ -204,15 +204,17 @@ export default class CenaEventoDetalhes extends Component {
                   </View>
                 </View>
                 <View style={styles.botoesInterecaoInterno}>
-                 <TouchableHighlight style={{flex: 1, margin: 5, borderRadius: 10 }}
+                 <TouchableHighlight 
                         onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
                       <Image source={imgDefaultPhoto} style={{width: 35, height: 30, backgroundColor: '#1D1D1D'}}> 
-                            
-                             <Text style={[styles.txtCinzaPequeno, {fontWeight: 'bold', paddingTop: 5}]}>{this.state.numEventoFotos}</Text>
-                            <Text style={[styles.txtCinzaPequeno,]}>FOTOS</Text>
                       </Image>
-                    </TouchableHighlight>
-                  
+                 </TouchableHighlight>
+                 <View style={{paddingTop: 5}}>
+                   <Text style={[styles.txtCinzaPequeno, {fontWeight: 'bold'}]}>{this.state.numEventoFotos}</Text>
+                 </View>
+                 <View>
+                   <Text style={[styles.txtCinzaPequeno,]}>FOTOS</Text>
+                 </View>
                 </View>
                 <View style={styles.botoesInterecaoInterno}>
                   <TouchableOpacity onPress={this.onOpen.bind(this)}>
@@ -275,8 +277,8 @@ export default class CenaEventoDetalhes extends Component {
                         onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
                       <Image style={{flex: 1, borderRadius: 10}} 
                             source={{ uri: this.state.evento.eventoFotos[4].photo }}>
-                            <Text style={{color: 'white', fontWeight: 'bold'}}>GALERIA</Text>
-                            <Text style={{color: 'white', fontSize: 8}}>(+{this.state.numEventoFotos - 5} FOTOS)</Text>
+                            <Text style={{color: 'white', fontWeight: 'bold', backgroundColor:'transparent'}}>GALERIA</Text>
+                            <Text style={{color: 'white', fontSize: 8, backgroundColor:'transparent'}}>(+{this.state.numEventoFotos - 5} FOTOS)</Text>
                       </Image>
                     </TouchableHighlight>
                     
