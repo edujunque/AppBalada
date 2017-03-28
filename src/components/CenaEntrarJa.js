@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Image, Text, StyleSheet, TouchableHighlight, TextInput, ScrollView } from 'react-native';
+import { View, Image, Text, StyleSheet, TouchableHighlight, TextInput, ScrollView, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import {firebaseRef, auth} from '../FirebaseConfig'
+import LoginFacebook from './CenaLoginFacebook'
 
 const imgEmail = require('../imgs/ico-mail.png');
 const imgPassword = require('../imgs/ico-pass.png');
@@ -11,22 +12,41 @@ const imgBackground = require('../imgs/bg.jpg');
 export default class CenaLogin extends Component {
  constructor(props) {
     super(props);
-    this.state = {email : ''}
+    this.state = {email : 'a'}
     this.state = {pass : ''}
   }
 
  logIn(){
-    console.log('dentro do metodo');
+    
     var email = this.state.email;
     var senha = this.state.pass;
-    //Loga usuario usando metodo nativo do firebase, caso dê certo usuario é direcionado para a timeline
-    auth.signInWithEmailAndPassword(email, senha).then(() => {
-      //Direciona o usuario para a area logada.
-      Actions.timeline();
-      }, function(error) {
-      // An error happened.
-      alert(error);
-    });
+    if(email == null){
+      alert('Necessário preencher o E-mail e senha')
+    } else{
+      //Loga usuario usando metodo nativo do firebase, caso dê certo usuario é direcionado para a timeline
+      auth.signInWithEmailAndPassword(email, senha).then(() => {
+        //Direciona o usuario para a area logada.
+        Actions.timeline();
+        }, function(error) {
+        // An error happened.
+        alert(error);
+      });
+    }
+  }
+
+  esqueciMinhaSenha(){
+   var email = this.state.email;
+     if(email == null){
+      alert('Necessário preencher o E-mail')
+    } else{
+      auth.sendPasswordResetEmail(this.state.email).then(() => {
+        //Direciona o usuario para a area logada.
+        alert("E-mail encaminhado para sua conta")
+        }, function(error) {
+        // An error happened.
+        alert(error);
+      });
+    }
   }
 
  render() {
@@ -75,7 +95,18 @@ export default class CenaLogin extends Component {
                 <Text style={styles.txtCriarConta}>ENTRAR</Text>
             </TouchableHighlight>
           </View>
-        
+          <View style={{flex: 1, marginTop: 10, alignItems: 'center',}}>
+            <LoginFacebook />  
+          </View>
+          <View>
+           <TouchableHighlight style={{marginTop: 5}}
+                onPress={() => {this.esqueciMinhaSenha() }}
+                underlayColor={'transparent'}
+                activeOpacity={0.5}
+                >
+                <Text style={{fontSize: 12, color: 'white'}}>Esqueci minha senha</Text>
+            </TouchableHighlight>
+          </View>
         </View>
         </ScrollView>
          </Image>

@@ -23,6 +23,8 @@ export default class CenaLogin extends Component {
       );
   } 
 
+
+
  render() {
     return (
       
@@ -36,7 +38,9 @@ export default class CenaLogin extends Component {
         <View style={styles.criarConta}>
          <CriarConta />
         </View>
-       
+        <View style={{flex: 1, marginTop: 10, marginBottom: 10, alignItems: 'center',}}>
+          <LoginFacebook />  
+        </View>
         <View style={styles.login}>
         <Text style={{color:'gray', marginBottom: 10, fontSize: 12}}>Já é cadastrado?</Text>
           <TouchableHighlight style={styles.btnLogin}
@@ -46,12 +50,7 @@ export default class CenaLogin extends Component {
               >
               <Text style={styles.txtEntreJa}>ENTRE JÁ</Text>
           </TouchableHighlight>
-         
         </View>
-        <View style={{flex: 1, marginTop: 10, alignItems: 'center',}}>
-          <LoginFacebook />  
-        </View>
-        
         </ScrollView>
          </Image>
     );

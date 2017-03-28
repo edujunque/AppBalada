@@ -78,20 +78,10 @@ listarDados(){
           <View style={{flex: 0.7, }}>
             <Image source={imgTemp} style={{width: 40, height: 40, borderRadius: 30, backgroundColor: '#303030', resizeMode: 'cover'}}/>
           </View>
-          <View style={{flex: 3}}>
+          <View style={{flex: 4}}>
             <Text style={{color: 'white'}}>{eventos.evOrganizador}</Text>
             <Text style={{fontSize: 11, color: 'white'}}>Publicado em: {eventos.evDataPublicacao}</Text>
           </View>
-        <View style={{alignItems: 'flex-end', flex: 1}}>
-          <TouchableHighlight style={styles.btnRodape}
-              onPress={() => {Actions.timeline(); }}
-              underlayColor={'#303030'}
-              activeOpacity={0.5}
-              >
-              <Text style={{fontSize: 14, color: 'white', fontWeight: 'bold'}}>...</Text>
-          </TouchableHighlight>
-        </View>
-
         </View>
         <View>
           <TouchableHighlight 

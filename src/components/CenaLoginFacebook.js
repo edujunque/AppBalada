@@ -63,18 +63,9 @@ export default class LoginFacebook extends Component {
 
   }
 
-listarDados(){
-   var eventos = firebaseRef.child('eventos/3');
-   eventos.on('value', (snapshot) => { 
-      var evento = snapshot.val();
-      this.setState({ eventos : evento});
-      console.log(evento);
-    });
-}
-
   render() {
     return (
-     <FBLogin style={{ borderRadius: 30,  width: 225}}
+     <FBLogin style={{ borderRadius: 30,  width: 300}}
       ref={(fbLogin) => { this.fbLogin = fbLogin }}
       permissions={["email","user_friends"]}
       onLogin={(e) => {this.saveFacebookData(e)}}

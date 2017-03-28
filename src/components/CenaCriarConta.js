@@ -104,19 +104,7 @@ export default class CenaLogin extends Component {
               value={this.state.email}
             />
             </View>
-             <View style={styles.formCampos}>
-              <Image style={{width: 15, height: 15, marginLeft: 5}} source={imgCPF}
-              />
-              <TextInput
-              style={styles.formText}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="CPF"
-              placeholderTextColor='white'
-              onChangeText={(cpf) => this.setState({cpf})}
-              value={this.state.cpf}
-            />
-            </View>
-             <View style={styles.formCampos}>
+            <View style={styles.formCampos}>
               <Image style={{width: 14, height: 15, marginLeft: 5}} source={imgPassword}
               />
               <TextInput
