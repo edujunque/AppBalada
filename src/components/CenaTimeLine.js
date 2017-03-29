@@ -160,10 +160,8 @@ const styles = StyleSheet.create({
   margin: 10
  },
  filtro: {
-  flex: 1.5,
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundColor: 'black'
+  flex: 1,
+  backgroundColor: '#737373'
  },
   btnComprar: {
   backgroundColor: '#EE2B7A',

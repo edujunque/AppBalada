@@ -13,22 +13,22 @@ export default class Rodape extends Component {
     render() {
         return (
           <View style={styles.rodape}>
-              <View style={styles.btnrodape}>
-                  <TouchableHighlight style={{paddingRight: 30, paddingTop: 3}}
-                     onPress={() => {Actions.timeline(); }}
-                     underlayColor={'#303030'}
-                     activeOpacity={0.5}
-                     >
-                     <Image style={{width: 40, height: 40}} source={imgTimeline}/>
-                  </TouchableHighlight>
-                  <TouchableHighlight style={{paddingRight: 15}}
-                     onPress={() => {Actions.timeline(); }}
-                     underlayColor={'#303030'}
-                     activeOpacity={0.5}
-                     >
-                      <Image style={{width: 40, height: 45}} source={imgEventos}/>
-                  </TouchableHighlight>              
-              </View>
+              // <View style={styles.btnrodape}>
+              //     <TouchableHighlight style={{paddingRight: 30, paddingTop: 3}}
+              //        onPress={() => {Actions.timeline(); }}
+              //        underlayColor={'#303030'}
+              //        activeOpacity={0.5}
+              //        >
+              //        <Image style={{width: 40, height: 40}} source={imgTimeline}/>
+              //     </TouchableHighlight>
+              //     <TouchableHighlight style={{paddingRight: 15}}
+              //        onPress={() => {Actions.timeline(); }}
+              //        underlayColor={'#303030'}
+              //        activeOpacity={0.5}
+              //        >
+              //         <Image style={{width: 40, height: 45}} source={imgEventos}/>
+              //     </TouchableHighlight>              
+              // </View>
               <View>  
                   <TouchableHighlight 
                     onPress={() => {Actions.timeline(); }}
@@ -38,22 +38,22 @@ export default class Rodape extends Component {
                     <Image style={{width: 70, height: 59 }} source={imgLocal}/>
                   </TouchableHighlight>
               </View>
-              <View style={styles.btnrodape}>
-                  <TouchableHighlight style={{paddingTop: 3, paddingLeft: 5}}
-                      onPress={() => {Actions.timeline(); }}
-                      underlayColor={'#303030'}
-                      activeOpacity={0.5}
-                      >
-                      <Image style={{width: 53, height: 40}} source={imgBombando}/>
-                  </TouchableHighlight>
-                  <TouchableHighlight style={{paddingLeft: 30}}
-                      onPress={() => {Actions.timeline(); }}
-                     underlayColor={'#303030'}
-                     activeOpacity={0.5}
-                      >
-                      <Image style={{width: 40, height: 42}} source={imgConvites}/>
-                  </TouchableHighlight>
-              </View>
+              // <View style={styles.btnrodape}>
+              //     <TouchableHighlight style={{paddingTop: 3, paddingLeft: 5}}
+              //         onPress={() => {Actions.timeline(); }}
+              //         underlayColor={'#303030'}
+              //         activeOpacity={0.5}
+              //         >
+              //         <Image style={{width: 53, height: 40}} source={imgBombando}/>
+              //     </TouchableHighlight>
+              //     <TouchableHighlight style={{paddingLeft: 30}}
+              //         onPress={() => {Actions.timeline(); }}
+              //        underlayColor={'#303030'}
+              //        activeOpacity={0.5}
+              //         >
+              //         <Image style={{width: 40, height: 42}} source={imgConvites}/>
+              //     </TouchableHighlight>
+              // </View>
           </View>
         );
     }
