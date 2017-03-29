@@ -3,6 +3,16 @@ package com.appbalada;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
+import cl.json.RNSharePackage;
+import com.reactnative.photoview.PhotoViewPackage;
+import com.airbnb.android.react.maps.MapsPackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.magus.fblogin.FacebookLoginPackage;
+import com.reactnative.photoview.PhotoViewPackage;
+import cl.json.RNSharePackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.magus.fblogin.FacebookLoginPackage;
 import com.reactnative.photoview.PhotoViewPackage;
@@ -29,11 +39,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new MapsPackage(),
-            new FacebookLoginPackage(),
-            new PhotoViewPackage(),
-            new RNSharePackage(),
             new LinearGradientPackage(),
+            new FacebookLoginPackage(),
+            new RNSharePackage(),
+            new MapsPackage(),
+            new PhotoViewPackage(),
             new VectorIconsPackage()
       );
     }

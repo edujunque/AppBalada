@@ -137,9 +137,7 @@ listarDados(){
           renderRow={eventos => this.renderRow(eventos)}
           />
         </Screen>
-        <View style={styles.rodape}>
-          <Rodape />
-        </View>
+       
       </View>
       
     );
@@ -149,19 +147,17 @@ listarDados(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'transparent'
  },
  topo: {
   flex: 1.5,
- },
- rodape: {
-  flex: 1.3,
  },
  user: {
   margin: 10
  },
  filtro: {
   flex: 1,
-  backgroundColor: '#737373'
+  backgroundColor: 'black'
  },
   btnComprar: {
   backgroundColor: '#EE2B7A',

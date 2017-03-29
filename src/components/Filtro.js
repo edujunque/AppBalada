@@ -60,7 +60,7 @@ export default class PickerExample extends Component {
                      <TouchableHighlight 
                         onPress={() => {this.setState({filter : "Recentes"})}}
                         underlayColor={'transparent'}
-                        activeOpacity={0.5}>
+                        activeOpacity={0.9}>
                         <Text style={this.renderActivateFilterText("Recentes")}>Recentes</Text>
                      </TouchableHighlight>
                 </View>
@@ -68,7 +68,7 @@ export default class PickerExample extends Component {
                      <TouchableHighlight 
                         onPress={() => {this.setState({filter : "Rolando Agora"})}}
                         underlayColor={'transparent'}
-                        activeOpacity={0.5}>
+                        activeOpacity={0.9}>
                         <Text style={this.renderActivateFilterText("Rolando Agora")}>Rolando Agora</Text>
                      </TouchableHighlight>                
                 </View>
@@ -76,7 +76,7 @@ export default class PickerExample extends Component {
                      <TouchableHighlight 
                         onPress={() => {this.setState({filter : "Bombando"})}}
                         underlayColor={'transparent'}
-                        activeOpacity={0.5}>                         
+                        activeOpacity={0.9}>                         
                         <Text style={this.renderActivateFilterText("Bombando")}>Bombando</Text>
                      </TouchableHighlight>                
                 </View>
@@ -84,7 +84,7 @@ export default class PickerExample extends Component {
                      <TouchableHighlight 
                         onPress={() => {this.setState({filter : "Curtidas"})}}
                         underlayColor={'transparent'}
-                        activeOpacity={0.5}>                         
+                        activeOpacity={0.9}>                         
                         <Text style={this.renderActivateFilterText("Curtidas")}>Curtidas</Text>
                      </TouchableHighlight>                
                 </View>
@@ -95,14 +95,14 @@ export default class PickerExample extends Component {
 
 const styles = StyleSheet.create({
     txtAtivado: {
-        color: 'blue',
+        color: '#EE2B7A',
     },
     txtDesativado: {
-        color: 'white'
+        color: '#737373'
     },
     buttonAtivado: {
         borderBottomWidth: 3, 
-        borderColor: 'pink',
+        borderColor: '#EE2B7A',
         marginBottom: 2
     },
     buttonDesativado: {

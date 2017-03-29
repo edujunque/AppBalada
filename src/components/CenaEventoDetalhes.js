@@ -7,6 +7,7 @@ import {firebaseRef, auth} from '../FirebaseConfig'
 import { Image,  ListView,  Tile,  Title,  Subtitle,  Screen} from '@shoutem/ui';
 import { Actions } from 'react-native-router-flux';
 import MapView from 'react-native-maps';
+import LinearGradient from 'react-native-linear-gradient';
 import Rodape from './Rodape'
 import Topo from './Topo'
 import Filtro from './Filtro'
@@ -334,7 +335,9 @@ export default class CenaEventoDetalhes extends Component {
           </ScrollView>
         </View>
         <View style={styles.rodape}>
-          <Rodape />
+        	<LinearGradient colors={['rgba(0, 0, 0, 0.5)','transparent',]} style={{flex:1}}>
+				<Rodape />
+			</LinearGradient> 
         </View>
         <ShareSheet visible={this.state.visible} onCancel={this.onCancel.bind(this)}>
           <Button iconSrc={{ uri: TWITTER_ICON }}
@@ -428,10 +431,14 @@ const styles = StyleSheet.create({
  topo: {
   flex: 1.5
  },
- rodape: {
-  flex: 1.5
- },
- conteudo:{
+rodape: {
+  position: 'absolute',
+  bottom: 1,
+  right: 1,
+  left: 1,
+  
+},
+conteudo:{
   flex: 10,
   backgroundColor: '#303030'
  },
@@ -508,7 +515,7 @@ const styles = StyleSheet.create({
   margin: 5,
   backgroundColor: '#303030',
   borderRadius: 10,
-  marginBottom: 40,
+  marginBottom: 70,
   flexDirection: 'row',
   alignItems: 'center'
  },

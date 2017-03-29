@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\0.11.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-0.11.0_169ebce2ab52c290dfb32eb74dd65d254370652c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.11.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -36,15 +27,6 @@
         revision="23.0.1"
         sha1="b319ff9834bbeb9be394687614eb86892699ea14">
         <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-vector-icons-unspecified_b96c5f994d5ea61216d865727155a2ceb6c3f3f2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_66ef66aabb1b7e80a183a666a6f69df1ca6207ca.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,15 +84,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_569ef1c89363e4234377f5c2944165cbcff4b310.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.42.3\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -156,30 +129,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_ae51f6cd6812a2eb355e9b670ebdb4193461f058.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\AppBalada\react-native-photo-view\unspecified\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="84b3eb73e4553d4614543e95933ecb8a4ebcd3b2">
         <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-photo-view-unspecified_84a903b057b8511f33f84e1c131e75c538d9b4ad.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.11.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-0.11.0_164c97d25d35f1a9939b05b54e5415930565c59a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,15 +147,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_bc811ba619a635ffc825c9343304672d6ced469e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.42.3\jars\libs\infer-annotations-1.5.jar"
         jumboMode="false"
         optimize="true"
@@ -210,30 +156,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.10.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="53df71a373e68311fc2c587aa814db7f366ace95">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.10.1_f54217aab1114be5a8d8579d5cabf6da63ee51e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.11.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="3341b66c54367e777a0647e2db96c045329bfeab">
         <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-0.11.0_615b040dc5201ae54c5564c31ed52027205c87e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Doninha\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_4dc6f06577b4676c4a97d1130f5b743afd93f5a0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -264,15 +192,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.11.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-0.11.0_9812213dd602a7e47a01cc250c023c709cb6b780.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Doninha\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
@@ -300,21 +219,102 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_975231618808eefeaaf455cdd90c0dc1b594b91b.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Doninha\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_6c85dfe40a6a14982447fcd1884ce77247e0db11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-0.11.0_169ebce2ab52c290dfb32eb74dd65d254370652c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_66ef66aabb1b7e80a183a666a6f69df1ca6207ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_569ef1c89363e4234377f5c2944165cbcff4b310.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_ae51f6cd6812a2eb355e9b670ebdb4193461f058.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-0.11.0_164c97d25d35f1a9939b05b54e5415930565c59a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_bc811ba619a635ffc825c9343304672d6ced469e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.10.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="53df71a373e68311fc2c587aa814db7f366ace95">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.10.1_f54217aab1114be5a8d8579d5cabf6da63ee51e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Doninha\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.4.1\63994437f62bc861bc20c605d12962f7246116d1\okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_4dc6f06577b4676c4a97d1130f5b743afd93f5a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.11.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-0.11.0_9812213dd602a7e47a01cc250c023c709cb6b780.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_975231618808eefeaaf455cdd90c0dc1b594b91b.jar" />
     </item>
     <item
         is-multidex="false"

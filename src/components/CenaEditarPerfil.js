@@ -94,9 +94,6 @@ const styles = StyleSheet.create({
   topo: {
     flex: 1.5
   },
-  rodape: {
-    flex: 1.5
-  },
   conteudo:{
     flex: 10,
     // backgroundColor: '#1D1D1D'
