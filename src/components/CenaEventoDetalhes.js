@@ -296,7 +296,7 @@ export default class CenaEventoDetalhes extends Component {
           </ScrollView>
         </View>
         <View style={styles.rodape}>
-			<Rodape />
+			<Rodape evID={this.state.evento.evID}/>
        </View>
       </View>
      

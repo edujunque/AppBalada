@@ -3,6 +3,7 @@ import { View, Image, TouchableHighlight, StyleSheet, TouchableOpacity, Text } f
 import { Actions } from 'react-native-router-flux';
 import LinearGradient from 'react-native-linear-gradient';
 import Share, {ShareSheet, Button} from 'react-native-share';   
+import BotaoCheckin from './BotaoCheckin'
 
 const imgTimeline= require('../imgs/bt-timeline.png');
 const imgEventos = require('../imgs/bt-eventos-cor.png');
@@ -140,13 +141,7 @@ export default class Rodape extends Component {
                     </TouchableHighlight>
                 </View>
                 <View>
-                    <TouchableHighlight 
-                      onPress={() => {Actions.timeline(); }}
-                       underlayColor={'transparent'}
-                       activeOpacity={0.5}
-                      >
-                      <Image style={{width: 70, height: 59 }} source={imgLocal}/>
-                    </TouchableHighlight>
+                    <BotaoCheckin evID={this.props.evID}/>
                 </View>
                 <View style={{alignItems: 'center'}}>
                    <TouchableOpacity  onPress={this.onOpen.bind(this)}>

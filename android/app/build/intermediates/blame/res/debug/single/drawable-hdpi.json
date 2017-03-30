@@ -212,12 +212,12 @@
         "source": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.10.1\\res\\drawable-hdpi\\messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\com_facebook_tooltip_blue_background.9.png",
-        "source": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.10.1\\res\\drawable-hdpi\\com_facebook_tooltip_blue_background.9.png"
-    },
-    {
         "merged": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\com_facebook_button_like_icon_selected.png",
         "source": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.10.1\\res\\drawable-hdpi\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\com_facebook_tooltip_blue_background.9.png",
+        "source": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.10.1\\res\\drawable-hdpi\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\CodigoFonte\\reactiveNative\\AppBalada\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\com_facebook_tooltip_black_background.9.png",
