@@ -14,9 +14,8 @@ export default class botaoLike extends Component {
    }
 
 
-   componentWillMount() {
+   componentDidMount() {
     this.atualizaImgLiked();
-    console.log('pau')
    }
 
    atualizaImgLiked(){
