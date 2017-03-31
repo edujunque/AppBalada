@@ -131,7 +131,7 @@ export default class Rodape extends Component {
               colors={['transparent', 'rgba(0, 0, 0, 1)']} 
               >
               <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <View>
+                <View >
                   <TouchableHighlight 
                       onPress={() => {Actions.timeline(); }}
                        underlayColor={'transparent'}
@@ -140,7 +140,7 @@ export default class Rodape extends Component {
                       <Image style={{width: 40, height: 40 }} source={imgTimeline}/>
                     </TouchableHighlight>
                 </View>
-                <View>
+                <View style={{paddingLeft: 17}}>
                     <BotaoCheckin evID={this.props.evID}/>
                 </View>
                 <View style={{alignItems: 'center'}}>

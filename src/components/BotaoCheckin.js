@@ -111,18 +111,5 @@ export default class botaoLike extends Component {
 }
 
 const styles = StyleSheet.create({
-  btnCriarConta: {
-  backgroundColor: 'transparent',
-  width: 300,
-  alignItems: 'center',
-  padding: 13,
-  borderRadius: 30,
-  borderWidth: 0.5,
-  borderColor: 'red'
-},
-  txtCriarConta: {
-    color: 'red',
-    fontWeight: 'bold',
-    fontSize: 17
-}
+ 
 });

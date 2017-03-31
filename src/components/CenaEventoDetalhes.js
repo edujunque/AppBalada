@@ -224,17 +224,28 @@ export default class CenaEventoDetalhes extends Component {
               <View style={styles.fotos}>
                 <View style={{flex: 1}}>
                   <View style={{flexDirection: 'row', flex: 2}}>
-                     <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
+                    <TouchableHighlight style={{flex: 1, borderRadius: 10 }}
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
+                      <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
                         source={{ uri: this.state.evento.eventoFotos[0].photo }}></Image>
-                     <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
+                    </TouchableHighlight>
+                    <TouchableHighlight style={{flex: 1, borderRadius: 10 }}
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
+                      <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
                         source={{ uri: this.state.evento.eventoFotos[1].photo }}></Image>
+                    </TouchableHighlight>
                   </View>
                    <View style={{flexDirection: 'row', flex: 1}}>
-                     <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
+                    <TouchableHighlight style={{flex: 1, borderRadius: 10 }}
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
+                      <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
                         source={{ uri: this.state.evento.eventoFotos[2].photo }}></Image>
-                     <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
+                    </TouchableHighlight>
+                    <TouchableHighlight style={{flex: 1, borderRadius: 10 }}
+                        onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
+                      <Image style={{flex: 1, borderRadius: 10, margin: 5, backgroundColor: 'transparent'}} 
                         source={{ uri: this.state.evento.eventoFotos[3].photo }}></Image>
-                       
+                    </TouchableHighlight>                                       
                     <TouchableHighlight style={{flex: 1, margin: 5, borderRadius: 10 }}
                         onPress={() => {Actions.galeria({evID: this.state.evento.evID})}}>
                       <Image style={{flex: 1, borderRadius: 10}} 
