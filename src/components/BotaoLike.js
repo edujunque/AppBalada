@@ -13,7 +13,14 @@ export default class botaoLike extends Component {
     this.state = { liked : false}
    }
 
+
    componentWillMount() {
+    this.atualizaImgLiked();
+    console.log('pau')
+   }
+
+   atualizaImgLiked(){
+      console.log('Atualiza imagem coraçao');
       const usuarioAtual = auth.currentUser;
       var refData = firebaseRef.child('user/'+ usuarioAtual.uid);
       refData.on('value',(snapshot) => {
@@ -23,6 +30,7 @@ export default class botaoLike extends Component {
           //Se o nó existe é ´porque o usuario já deu like nesse evento
           //Verifica qual é o estado atual do like
           // console.log(evLiked.liked);
+          // alert(this.props.evID + ': ' + evLiked.liked)
           if(evLiked.liked){
             this.setState({liked: true});
             // console.log('existe o nó: setou estado true');
@@ -39,7 +47,8 @@ export default class botaoLike extends Component {
         }
       }); 
    }
-  
+
+
   actionLikeBtn(){
       var evCurtidas = 0;
       var refDataEvento = firebaseRef.child('eventos/'+ this.props.evID);
@@ -67,7 +76,6 @@ export default class botaoLike extends Component {
         evCurtidas : evCurtidas + 1
       });
     }
-    
   }
   
 

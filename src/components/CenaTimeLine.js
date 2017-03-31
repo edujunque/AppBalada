@@ -20,20 +20,58 @@ export default class CenaTimeLine extends Component {
 constructor(props) {
   super(props);
   this.state = {eventos : []}
+  this.filterUser = this.filterUser.bind(this);
 }
 
-listarDados(){
-   var eventos = firebaseRef.child('eventos');
-   eventos.on('value', (snapshot) => { 
-      var evento = snapshot.val();
-      this.setState({ eventos : evento});
-      //console.log(parsedTodos);
-    });
-}
-
- componentWillMount() {
-   this.listarDados();
+ filterUser(filter){
+  this.listarDados(filter);
  }
+
+listarDados(filter){
+   const usuarioAtual = auth.currentUser;
+   var eventos = firebaseRef.child('eventos').orderByKey();
+   // var user = firebaseRef.child('user');
+   var evento;
+   eventos.on('value', function(snapshot) { 
+    evento = snapshot.val();
+   });
+
+   var refDataUser = firebaseRef.child('user/'+ usuarioAtual.uid);
+   refDataUser.on('value', (snapshot) => {
+     var listagemEventos = [];
+       //aplica as regras de filtro
+     if(filter == 'Curtidas'){
+     
+        evento.forEach((childSnapshot) => {
+         if( snapshot.child('/eventosCurtidos' + '/evID/' + childSnapshot.evID).exists()){
+          //Se existe verificar se esta true ou false.
+          var evLiked = snapshot.child('/eventosCurtidos' + '/evID/' + childSnapshot.evID).val();
+          if(evLiked.liked){
+
+            //Caso true quer dizer que o usuario curtiu esse evento.
+            //Adiciona o evento no objeto que será enviado para o state
+            listagemEventos.push(childSnapshot);
+          }
+         }
+        });
+     } else if(filter == 'Rolando Agora'){
+
+     } else if(filter == 'Bombando'){
+
+     } else {
+      //Lista as mais recentes
+         evento.forEach((childSnapshot) => {
+            listagemEventos.push(childSnapshot);
+         });
+         
+     }
+     this.setState({ eventos : listagemEventos});
+   });
+}
+
+ // componentDidMount() {
+ //   this.listarDados("Recentes");
+ // }
 
  returnBuyBtn(blnShow){
 
@@ -102,7 +140,7 @@ listarDados(){
                 <Subtitle style={{color: '#737373', fontSize: 12}}>{eventos.evLocal}</Subtitle>
               </View>
               <View style={{ flex : 2, paddingTop: 10}}>
-                <BotaoLike evID={eventos.evID}/>
+                <BotaoLike evID={eventos.evID} />
               </View>
             </View>
           <View style={{flexDirection: 'row', borderTopWidth: 0.2, borderColor: 'white', margin: 10}}>
@@ -129,7 +167,7 @@ listarDados(){
           <Topo />
         </View>
         <View style={styles.filtro}>
-          <Filtro />
+          <Filtro  filterUser={this.filterUser} />
         </View>
         <Screen style={{flex: 8, backgroundColor: 'black'}}>
           <ListView

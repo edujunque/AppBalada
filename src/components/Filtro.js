@@ -15,7 +15,17 @@ export default class PickerExample extends Component {
         //         items: []
         //     }
         // }
-        this.state = { filter : 'Recentes'};
+        this.state = { filter : ''};
+        this.handler = this.handler.bind(this);
+    }
+
+    componentWillMount() {
+      this.handler('Recentes');
+    }
+
+    handler(filter){
+      this.props.filterUser(filter);
+      this.setState({filter : filter})
     }
     // onValueChange (value: string) {
     //     this.setState({
@@ -58,7 +68,7 @@ export default class PickerExample extends Component {
             <View style={{flex: 1,alignItems: 'flex-end', justifyContent: 'space-around', flexDirection: 'row'}}>
                 <View style={this.renderActivateFilterButton("Recentes")}>
                      <TouchableHighlight 
-                        onPress={() => {this.setState({filter : "Recentes"})}}
+                        onPress={() => { this.handler("Recentes")}}
                         underlayColor={'transparent'}
                         activeOpacity={0.9}>
                         <Text style={this.renderActivateFilterText("Recentes")}>Recentes</Text>
@@ -66,7 +76,7 @@ export default class PickerExample extends Component {
                 </View>
                 <View style={this.renderActivateFilterButton("Rolando Agora")}>
                      <TouchableHighlight 
-                        onPress={() => {this.setState({filter : "Rolando Agora"})}}
+                        onPress={() => {this.handler("Rolando Agora")}}
                         underlayColor={'transparent'}
                         activeOpacity={0.9}>
                         <Text style={this.renderActivateFilterText("Rolando Agora")}>Rolando Agora</Text>
@@ -74,7 +84,7 @@ export default class PickerExample extends Component {
                 </View>
                 <View style={this.renderActivateFilterButton("Bombando")}>
                      <TouchableHighlight 
-                        onPress={() => {this.setState({filter : "Bombando"})}}
+                        onPress={() => {this.handler("Bombando")}}
                         underlayColor={'transparent'}
                         activeOpacity={0.9}>                         
                         <Text style={this.renderActivateFilterText("Bombando")}>Bombando</Text>
@@ -82,7 +92,7 @@ export default class PickerExample extends Component {
                 </View>
                 <View style={this.renderActivateFilterButton("Curtidas")}>
                      <TouchableHighlight 
-                        onPress={() => {this.setState({filter : "Curtidas"})}}
+                        onPress={() => {this.handler("Curtidas")}}
                         underlayColor={'transparent'}
                         activeOpacity={0.9}>                         
                         <Text style={this.renderActivateFilterText("Curtidas")}>Curtidas</Text>
