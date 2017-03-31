@@ -11,15 +11,15 @@ import CenaEditarPerfil from './components/CenaEditarPerfil';
 import CenaEntrarJa from './components/CenaEntrarJa';
 
 const Rotas = () => (
-	<Router>
+	<Router navigationBarStyle={{ backgroundColor: 'transparent', borderBottomColor: 'transparent', marginTop: 10 }}>
 	    <Scene hideNavBar={true} key='login' component={CenaLogin} title='Login' initial={true} />
-	    <Scene hideNavBar={true} navigationBarStyle={{paddingTop:50}} key='timeline' component={CenaTimeLine} title='TimeLine' />
-	    <Scene hideNavBar={false} key='eventodetalhes' component={CenaEventoDetalhes} title='EventoDetalhes'/>
-	    <Scene hideNavBar={false} key='eventogaleriafotos' component={CenaEventoGaleria} title='EventoGaleria'/>
-	    <Scene hideNavBar={false} key='galeria' component={Galeria} title='Galeria' />
-	    <Scene hideNavBar={false} key='CenaLoginFacebook' component={CenaLoginFacebook} title='CenaLoginFacebook' />
-	    <Scene hideNavBar={false} key='editarPerfil' component={CenaEditarPerfil} title='CenaEditarPerfil' />
-	    <Scene hideNavBar={false} key='entrarJa' component={CenaEntrarJa} title='CenaEntrarJa' />
+	    <Scene hideNavBar={true} key='timeline' component={CenaTimeLine} title='TimeLine' />
+	    <Scene hideNavBar={false} key='eventodetalhes' component={CenaEventoDetalhes} />
+	    <Scene hideNavBar={false} key='eventogaleriafotos' component={CenaEventoGaleria} />
+	    <Scene hideNavBar={false} navigationBarStyle={{ marginTop: 12, marginLeft: 7 }} key='galeria' component={Galeria} />
+	    <Scene hideNavBar={false} key='CenaLoginFacebook' component={CenaLoginFacebook}  />
+	    <Scene hideNavBar={false} key='editarPerfil' component={CenaEditarPerfil} />
+	    <Scene hideNavBar={false} key='entrarJa' component={CenaEntrarJa} />
 	</Router>
 	);
 
