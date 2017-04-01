@@ -21,6 +21,7 @@ const imgDefaultShare = require('../imgs/ico_share.png');
 const imgMen = require('../imgs/men-grey.png');
 const imgWomen = require('../imgs/woman-grey.png');
 const imgGo = require('../imgs/bt_go.png');
+const imgCheckIn = require('../imgs/ico_place.png');
 const showBuyBtn = false;
 
 export default class CenaEventoDetalhes extends Component {
@@ -91,8 +92,37 @@ export default class CenaEventoDetalhes extends Component {
          </TouchableHighlight>
       );             
     }
-  
  }
+
+returnCheckins(){
+  if(this.days_between() > 0){
+    //Evento ainda não passou
+    return <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
+          <View>
+            <Text style={styles.txtCinzaPequeno}>FALTAM</Text> 
+          </View>
+          <View>
+            <Text style={{color:'white', fontSize: 30}}>{this.days_between()}</Text>
+          </View>
+          <View>
+            <Text style={{color:'#EE2B7A', fontSize: 12, fontWeight: 'bold'}}>DIAS</Text>
+          </View>
+         </View>
+  } else {
+    //<= 0 ja esta no dia o o evento já passou
+    return <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
+          <View style={{marginBottom: 5}}>
+            <Image source={imgCheckIn} style={{width: 25, height: 35, backgroundColor: 'transparent'}} /> 
+          </View>
+          <View>
+            <Text style={styles.txtCinzaPequeno}>{this.state.evento.evCheckin}</Text>
+          </View>
+          <View>
+            <Text style={styles.txtCinzaPequeno}>CHECK-INS</Text>
+          </View>
+         </View>
+  }
+}
 
   // defines the UI of each row in the list
   renderRowPrecos(precos) {
@@ -156,17 +186,7 @@ export default class CenaEventoDetalhes extends Component {
               </View>
               <View style={styles.botoesInterecao}>
               <View style={{flex: 1, flexDirection: 'row'}}>
-                <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
-                  <View>
-                    <Text style={styles.txtCinzaPequeno}>FALTAM</Text> 
-                  </View>
-                  <View>
-                    <Text style={{color:'white', fontSize: 30}}>{this.days_between()}</Text>
-                  </View>
-                  <View>
-                    <Text style={{color:'#EE2B7A', fontSize: 12, fontWeight: 'bold'}}>DIAS</Text>
-                  </View>
-                </View>
+                {this.returnCheckins()}
                 <View style={styles.botoesInterecaoInterno}>
                   <View>
                     <BotaoLike evID={this.state.evento.evID}/>
