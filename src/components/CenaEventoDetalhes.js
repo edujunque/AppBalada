@@ -94,22 +94,36 @@ export default class CenaEventoDetalhes extends Component {
     }
  }
 
+ hours_between(dateEv, horaInicio, horaFim, TempoDuracao) {
+    //data evento
+    var dateEvento = String(dateEv);
+    var res = dateEvento.split("/");
+    var horaInicio = horaInicio.split(":");
+    //Menos 1 pois o Date() começa a contar os meses a partir do zero e não 1
+    var eventoInicio = new Date(res[2],res[1] -1,res[0], horaInicio[0],horaInicio[1]);
+    var eventoFim = new Date(eventoInicio);
+    //ja retorna o evento fim em milisegundos
+    eventofim = eventoFim.setHours(eventoInicio.getHours() + TempoDuracao);
+    //Data atual
+    var dateNow = new Date();
+    // The number of milliseconds in one day
+    var ONE_DAY = 1000 * 60 * 60 * 24
+
+    //Data de inicio
+    var utc1 = Date.UTC(eventoInicio.getFullYear(), eventoInicio.getMonth(), eventoInicio.getDate(), eventoInicio.getHours(), eventoInicio.getMinutes());
+    //DateNow deve estar entre o horario de inicio e fim do evento
+    var utcNow = Date.UTC(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate(), dateNow.getHours(), dateNow.getMinutes());
+    
+    if(dateNow >= utc1){
+      return true
+    } else {
+      return false
+    }
+}
+
 returnCheckins(){
-  if(this.days_between() > 0){
-    //Evento ainda não passou
-    return <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
-          <View>
-            <Text style={styles.txtCinzaPequeno}>FALTAM</Text> 
-          </View>
-          <View>
-            <Text style={{color:'white', fontSize: 30}}>{this.days_between()}</Text>
-          </View>
-          <View>
-            <Text style={{color:'#EE2B7A', fontSize: 12, fontWeight: 'bold'}}>DIAS</Text>
-          </View>
-         </View>
-  } else {
-    //<= 0 ja esta no dia o o evento já passou
+  if(this.hours_between(this.state.evento.evData,this.state.evento.evHorarioInicio,this.state.evento.evHorarioFim,this.state.evento.evTempoDuracao)){
+     // ja esta no dia ou o evento já passou
     return <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
           <View style={{marginBottom: 5}}>
             <Image source={imgCheckIn} style={{width: 25, height: 35, backgroundColor: 'transparent'}} /> 
@@ -119,6 +133,19 @@ returnCheckins(){
           </View>
           <View>
             <Text style={styles.txtCinzaPequeno}>CHECK-INS</Text>
+          </View>
+         </View>
+  } else {
+   //Evento ainda não passou
+    return <View style={[styles.botoesInterecaoInterno, {borderLeftWidth: 0}]}>
+          <View>
+            <Text style={styles.txtCinzaPequeno}>FALTAM</Text> 
+          </View>
+          <View>
+            <Text style={{color:'white', fontSize: 30}}>{this.days_between()}</Text>
+          </View>
+          <View>
+            <Text style={{color:'#EE2B7A', fontSize: 12, fontWeight: 'bold'}}>DIAS</Text>
           </View>
          </View>
   }

@@ -91,7 +91,16 @@ listarDados(filter){
           }
         );
      } else if(filter == 'Bombando'){
-
+         evento.forEach((childSnapshot) => {
+            if(this.hours_between(childSnapshot.evData, childSnapshot.evHorarioInicio, childSnapshot.evHorarioFim, childSnapshot.evTempoDuracao)){
+              //caso esteja rolando agora verifica se tem o minimo de checkins 
+              if(childSnapshot.evCheckin >= 10 && childSnapshot.evCurtidas >= 10){
+                //Adiciona o evento no objeto que será enviado para o state
+                listagemEventos.push(childSnapshot);
+              }
+            }
+          }
+        );
      } else {
       //Lista as mais recentes
          evento.forEach((childSnapshot) => {
