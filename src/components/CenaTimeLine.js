@@ -27,9 +27,37 @@ constructor(props) {
   this.listarDados(filter);
  }
 
+
+ hours_between(dateEv, horaInicio, horaFim, TempoDuracao) {
+    //data evento
+    var dateEvento = String(dateEv);
+    var res = dateEvento.split("/");
+    var horaInicio = horaInicio.split(":");
+    //Menos 1 pois o Date() começa a contar os meses a partir do zero e não 1
+    var eventoInicio = new Date(res[2],res[1] -1,res[0], horaInicio[0],horaInicio[1]);
+    var eventoFim = new Date(eventoInicio);
+    //ja retorna o evento fim em milisegundos
+    eventofim = eventoFim.setHours(eventoInicio.getHours() + TempoDuracao);
+    //Data atual
+    var dateNow = new Date();
+    // The number of milliseconds in one day
+    var ONE_DAY = 1000 * 60 * 60 * 24
+
+    //Data de inicio
+    var utc1 = Date.UTC(eventoInicio.getFullYear(), eventoInicio.getMonth(), eventoInicio.getDate(), eventoInicio.getHours(), eventoInicio.getMinutes());
+    //DateNow deve estar entre o horario de inicio e fim do evento
+    var utcNow = Date.UTC(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate(), dateNow.getHours(), dateNow.getMinutes());
+    
+    if(dateNow >= utc1 && dateNow <= eventofim){
+      return true
+    } else {
+      return false
+    }
+}
+
 listarDados(filter){
    const usuarioAtual = auth.currentUser;
-   var eventos = firebaseRef.child('eventos').orderByKey();
+   var eventos = firebaseRef.child('eventos');
    // var user = firebaseRef.child('user');
    var evento;
    eventos.on('value', function(snapshot) { 
@@ -55,7 +83,13 @@ listarDados(filter){
          }
         });
      } else if(filter == 'Rolando Agora'){
-
+         evento.forEach((childSnapshot) => {
+            if(this.hours_between(childSnapshot.evData, childSnapshot.evHorarioInicio, childSnapshot.evHorarioFim, childSnapshot.evTempoDuracao)){
+              //Adiciona o evento no objeto que será enviado para o state
+              listagemEventos.push(childSnapshot);
+            }
+          }
+        );
      } else if(filter == 'Bombando'){
 
      } else {
@@ -88,8 +122,7 @@ listarDados(filter){
 
  returnDay(date){
     var res = String(date).split("/");
-    var date1 = new Date(res[2],res[1],res[0]);
-    return date1.getDate();
+    return res[0];
  }
 
  returnMonth(date){
