@@ -76,16 +76,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
+    flex: 2
   },
   viewRights: {
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
+    flex: 2
   },
   viewUserData: {
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
+    flex: 2
   },
   container: {
     flex: 1,

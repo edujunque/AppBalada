@@ -28,7 +28,7 @@ const Rotas = () => (
 	    <Scene hideNavBar={false} navigationBarStyle={{ marginTop: 12, marginLeft: 7 }} leftButtonIconStyle = {{ tintColor:'transparent'}} key='galeria' component={Galeria} />
 	    <Scene hideNavBar={false} key='CenaLoginFacebook' component={CenaLoginFacebook}  />
 	    <Scene hideNavBar={false} key='editarPerfil' component={CenaEditarPerfil} leftButtonIconStyle = {{ tintColor:'#EE2B7A'}}/>
-	    <Scene hideNavBar={false} key='entrarJa' component={CenaEntrarJa} />
+	    <Scene hideNavBar={false} key='entrarJa' component={CenaEntrarJa} leftButtonIconStyle = {{ tintColor:'#EE2B7A'}}/>
 	</Router>
 	);
 
