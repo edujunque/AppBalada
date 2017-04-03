@@ -10,8 +10,7 @@ import CenaLoginFacebook from './components/CenaLoginFacebook';
 import CenaEditarPerfil from './components/CenaEditarPerfil';
 import CenaEntrarJa from './components/CenaEntrarJa';
 
-const imgTemp = require('./imgs/NoPhoto_icon-user-default.jpg');
-const imgLogo = require('./imgs/logo.png');
+const imgTemp = require('./imgs/NoPhoto_icon-user-default.png');
 
 const Rotas = () => (
 	<Router navigationBarStyle={{ backgroundColor: 'transparent', borderBottomColor: 'transparent', marginTop: 10 }}>

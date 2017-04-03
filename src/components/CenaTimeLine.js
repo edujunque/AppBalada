@@ -12,7 +12,8 @@ import {firebaseRef, auth} from '../FirebaseConfig'
 //import { NavigationBar } from '@shoutem/ui/navigation';
 const imgLogo = require('../imgs/logo.png');
 const imgLike = require('../imgs/ico_like.png');
-const imgTemp = require('../imgs/NoPhoto_icon-user-default.jpg');
+const imgTemp = require('../imgs/NoPhoto_icon-user-default.png');
+const imgOrg = require('../imgs/admin.png');
 const showBuyBtn = false;
 
 export default class CenaTimeLine extends Component {
@@ -156,7 +157,7 @@ listarDados(filter){
       <View style={{backgroundColor: '#303030', marginBottom: 20}}>
         <View style={{flexDirection:'row', margin: 5, }}>
           <View style={{flex: 0.7, }}>
-            <Image source={imgTemp} style={{width: 40, height: 40, borderRadius: 30, backgroundColor: '#303030', resizeMode: 'cover'}}/>
+            <Image source={imgOrg} style={{width: 40, height: 40, borderRadius: 30, backgroundColor: '#303030', resizeMode: 'cover'}}/>
           </View>
           <View style={{flex: 4}}>
             <Text style={{color: 'white'}}>{eventos.evOrganizador}</Text>

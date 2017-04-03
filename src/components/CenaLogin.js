@@ -32,7 +32,7 @@ export default class CenaLogin extends Component {
       <Image style={{flex: 1, height: null, width: null, resizeMode: 'cover'}} source= {imgBackground}>
       <ScrollView style={styles.principal}>
       <View style={{alignItems:'center', justifyContent:'center', flex: 3, paddingTop: 40, paddingBottom: 40}}>
-        <Image style={{height: 40, width: 200}} source={imgLogo} />
+        <Image style={{height: 40, width: 120}} source={imgLogo} />
       </View>
       
         <View style={styles.criarConta}>

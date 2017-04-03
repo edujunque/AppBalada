@@ -11,10 +11,11 @@ import Rodape from './Rodape'
 import Topo from './Topo'
 import Filtro from './Filtro'
 import BotaoLike from './BotaoLike'
+const imgOrg = require('../imgs/admin.png');
 
 //import { NavigationBar } from '@shoutem/ui/navigation';
 const imgLogo = require('../imgs/logo.png');
-const imgTemp = require('../imgs/NoPhoto_icon-user-default.jpg');
+const imgTemp = require('../imgs/NoPhoto_icon-user-default.png');
 const imgLike = require('../imgs/ico_like.png');
 const imgDefaultPhoto = require('../imgs/ico_photo.png');
 const imgDefaultShare = require('../imgs/ico_share.png');
@@ -335,19 +336,13 @@ returnCheckins(){
               <View style={styles.organizador}>
                 <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
                   <View style={{flex: 1, alignItems: 'center'}}>
-                    <Image  styleName="small-avatar" style={{backgroundColor: 'transparent'}} source={imgTemp}></Image>
+                    <Image  styleName="small-avatar" style={{backgroundColor: 'transparent'}} source={imgOrg}></Image>
                   </View>
                   <View style={{flex: 6}}>
                     <Text style={[styles.txtCinzaPequeno, {fontSize: 10}]}>Organizado por</Text>
                     <Text style={{color: 'white'}}>{this.state.evento.evOrganizador}</Text>
                   </View>
-                  <View style={{alignItems: 'center', flex: 1}}>
-                     <TouchableHighlight 
-                          onPress={() => {Actions.eventogaleriafotos({evID: this.state.evento.evID})}}>
-                        <Image style={{width: 15, height: 23, backgroundColor: '#303030'}} source={imgGo}>
-                        </Image>
-                      </TouchableHighlight>
-                  </View>
+                 
                 </View>
               </View>
             </View>

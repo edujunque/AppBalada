@@ -4,7 +4,7 @@ import {firebaseRef, auth} from '../FirebaseConfig'
 import { Actions } from 'react-native-router-flux';
 
 const imgLogo = require('../imgs/logo.png');
-const imgTemp = require('../imgs/NoPhoto_icon-user-default.jpg');
+const imgTemp = require('../imgs/NoPhoto_icon-user-default.png');
 
 export default class Topo extends Component {
 
@@ -26,7 +26,7 @@ export default class Topo extends Component {
     // }, function(err) {
     //   console.log(err); // Error: "It broke"
     // });
-    return auth.currentUser.photoURL == null ? 'https://s3.amazonaws.com/convertflow/uploads/4e5effb9-0ef6-4975-ad75-1fd20c051e78/NoPhoto_icon-user-default.jpg' :  auth.currentUser.photoURL;
+    return auth.currentUser.photoURL == null ? 'https://s3.amazonaws.com/convertflow/uploads/4e5effb9-0ef6-4975-ad75-1fd20c051e78/NoPhoto_icon-user-default.png' :  auth.currentUser.photoURL;
   }
 
     render() {
@@ -34,7 +34,7 @@ export default class Topo extends Component {
         return (
           <View style={styles.topo}>
             <View style={{flex: 10, alignItems: 'center', marginLeft: 30}}>
-              <Image source={imgLogo} style={{width: 180, height: 40}}/>
+              <Image source={imgLogo} style={{width: 120, height: 40}}/>
             </View>
             <View style={{flex: 2}}>
               <TouchableHighlight 

@@ -28,7 +28,7 @@ export default class CenaEditarPerfil extends Component {
     }
 
   ReturnURL(){
-      return auth.currentUser.photoURL == null ? 'https://s3.amazonaws.com/convertflow/uploads/4e5effb9-0ef6-4975-ad75-1fd20c051e78/NoPhoto_icon-user-default.jpg' :  auth.currentUser.photoURL;
+      return auth.currentUser.photoURL == null ? 'https://s3.amazonaws.com/convertflow/uploads/4e5effb9-0ef6-4975-ad75-1fd20c051e78/NoPhoto_icon-user-default.png' :  auth.currentUser.photoURL;
   }
 
   render() {
