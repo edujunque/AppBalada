@@ -105,9 +105,11 @@ listarDados(filter){
      } else {
       //Lista as mais recentes
         if(this.state.eventos != []){
-            evento.forEach((childSnapshot) => {
-            listagemEventos.push(childSnapshot);
-         });
+          if(evento != null){
+              evento.forEach((childSnapshot) => {
+              listagemEventos.push(childSnapshot);
+              });
+            }
         }
          
      }
