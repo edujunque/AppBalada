@@ -35,11 +35,11 @@ export default class LoginFacebook extends Component {
              //console.log(data);
              firebaseRef.child('user/'+ usuarioAtual.uid).set({
                 facebookID : data.profile.id,
-                gender : data.profile.gender,
+                gender : data.profile.gender == null ? '' : data.profile.gender,
                 name : data.profile.first_name + ' ' + data.profile.last_name,
                 linkFB : data.profile.link
              });
-            
+              console.log(data.profile.picture.data.url);
              usuarioAtual.updateProfile({
               photoURL: data.profile.picture.data.url
               }).then(function() {
