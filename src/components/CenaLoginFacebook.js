@@ -37,8 +37,7 @@ export default class LoginFacebook extends Component {
                 facebookID : data.profile.id,
                 gender : data.profile.gender,
                 name : data.profile.first_name + ' ' + data.profile.last_name,
-                linkFB : data.profile.link,
-                cpf : ''
+                linkFB : data.profile.link
              });
             
              usuarioAtual.updateProfile({

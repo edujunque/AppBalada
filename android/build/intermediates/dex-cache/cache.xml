@@ -8,7 +8,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="1ac1a52d84feee696d966c36344425e8fd9cd515">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-share-unspecified_2595a4e14883cdf275fead447065638a7dc179fd.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-share-unspecified_2595a4e14883cdf275fead447065638a7dc179fd.jar" />
     </item>
     <item
         is-multidex="false"
@@ -17,7 +17,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="1137942adeb03984c1311b662363dd38fc238fd3">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-0.11.0_515414af0c7b05fbb28e77539966027ca2b57fae.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-drawee-0.11.0_515414af0c7b05fbb28e77539966027ca2b57fae.jar" />
     </item>
     <item
         is-multidex="false"
@@ -26,7 +26,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="b319ff9834bbeb9be394687614eb86892699ea14">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-vector-icons-unspecified_b96c5f994d5ea61216d865727155a2ceb6c3f3f2.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-vector-icons-unspecified_b96c5f994d5ea61216d865727155a2ceb6c3f3f2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -35,7 +35,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_42a334f57137d34b46ad1c971afcd38aba1e81bf.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.0.1_42a334f57137d34b46ad1c971afcd38aba1e81bf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -44,7 +44,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-0.11.0_fdb7e9bd460dc06892cbaf9a934e12bd26427c35.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-imagepipeline-base-0.11.0_fdb7e9bd460dc06892cbaf9a934e12bd26427c35.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,7 +53,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_caba61d9416da8b2a781d0f4e9ceed64dab98a0e.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\javax.inject-1_caba61d9416da8b2a781d0f4e9ceed64dab98a0e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -62,7 +62,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="e5ceac4d4c5f5559d813fb8e0419203a51b40462">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\me.relex-photodraweeview-1.0.0_49e05d18647dbc3cec132a2e5197ca0210e72085.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\me.relex-photodraweeview-1.0.0_49e05d18647dbc3cec132a2e5197ca0210e72085.jar" />
     </item>
     <item
         is-multidex="false"
@@ -71,7 +71,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_d4cd10e11c45abf68060b3774735dd9480a91dce.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_d4cd10e11c45abf68060b3774735dd9480a91dce.jar" />
     </item>
     <item
         is-multidex="false"
@@ -80,7 +80,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="b1de8f75805268154da5e88bb6195760b9d8966f">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-linear-gradient-unspecified_72dff2a46d3941eca4e581dfade1a1bc1981ea4a.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-linear-gradient-unspecified_72dff2a46d3941eca4e581dfade1a1bc1981ea4a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -89,7 +89,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="962b06c207e808c0557ffd6163ac584025a96021">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.42.3_560d96541b3e97bd2994d9e88d7ef24c3d63be72.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.react-react-native-0.42.3_560d96541b3e97bd2994d9e88d7ef24c3d63be72.jar" />
     </item>
     <item
         is-multidex="false"
@@ -98,7 +98,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.0.1_2c75836ae697ef1c6b3e3c12d1ad8c30ab995539.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-maps-10.0.1_2c75836ae697ef1c6b3e3c12d1ad8c30ab995539.jar" />
     </item>
     <item
         is-multidex="false"
@@ -107,7 +107,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okhttp-ws-3.4.1_c66152d0944f0c8a78a265eed3603343025af440.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\okhttp-ws-3.4.1_c66152d0944f0c8a78a265eed3603343025af440.jar" />
     </item>
     <item
         is-multidex="false"
@@ -116,7 +116,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_fbfef6a12e9e9aab805d961caffc50a4198d0232.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\support-annotations-24.0.0_fbfef6a12e9e9aab805d961caffc50a4198d0232.jar" />
     </item>
     <item
         is-multidex="false"
@@ -125,7 +125,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.2.0_db8a8d3cc1e1455b9bd1b9876be07b2ea192989d.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.android.support-cardview-v7-23.2.0_db8a8d3cc1e1455b9bd1b9876be07b2ea192989d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -134,7 +134,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="84b3eb73e4553d4614543e95933ecb8a4ebcd3b2">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-photo-view-unspecified_84a903b057b8511f33f84e1c131e75c538d9b4ad.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-photo-view-unspecified_84a903b057b8511f33f84e1c131e75c538d9b4ad.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,7 +143,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="dfe415137a847f99a59cee27485aea5dedd9b09c">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-maps-unspecified_eb76ae04921af121ba302b2ff042b7a13e711db9.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-maps-unspecified_eb76ae04921af121ba302b2ff042b7a13e711db9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,7 +152,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\infer-annotations-1.5_8b132c0c50f9bd84549d08d80333e90854d2ac2a.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\infer-annotations-1.5_8b132c0c50f9bd84549d08d80333e90854d2ac2a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -161,7 +161,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="3341b66c54367e777a0647e2db96c045329bfeab">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-0.11.0_615b040dc5201ae54c5564c31ed52027205c87e1.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-imagepipeline-0.11.0_615b040dc5201ae54c5564c31ed52027205c87e1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -170,7 +170,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="2d9e18e876fb8797f19c400bfd11edfdbc2feeeb">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\AppBalada-react-native-facebook-login-unspecified_a849271e3aecba8d7e30c36e8fa8b8aa9debf8e5.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\AppBalada-react-native-facebook-login-unspecified_a849271e3aecba8d7e30c36e8fa8b8aa9debf8e5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -179,7 +179,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\library-2.4.0_633881ba3e47fe838096dca7592bb26700987ea6.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\library-2.4.0_633881ba3e47fe838096dca7592bb26700987ea6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -188,7 +188,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okio-1.9.0_6cec39bfbb3038a59f15fd6aba61328a9a25b6bf.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\okio-1.9.0_6cec39bfbb3038a59f15fd6aba61328a9a25b6bf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -197,7 +197,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_30cdfee7b7f90298ff29d9c9c888f68ab5a9e6cd.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\jsr305-3.0.0_30cdfee7b7f90298ff29d9c9c888f68ab5a9e6cd.jar" />
     </item>
     <item
         is-multidex="false"
@@ -206,7 +206,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_4e71b9cd0d6240184d41406e79cc69fbaef93204.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.4.0_4e71b9cd0d6240184d41406e79cc69fbaef93204.jar" />
     </item>
     <item
         is-multidex="false"
@@ -215,7 +215,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_f79158350d2ac6eb41c74fd65340fccaee409e4a.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-24.0.0_f79158350d2ac6eb41c74fd65340fccaee409e4a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -224,7 +224,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_6c85dfe40a6a14982447fcd1884ce77247e0db11.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0_6c85dfe40a6a14982447fcd1884ce77247e0db11.jar" />
     </item>
     <item
         is-multidex="false"
@@ -233,7 +233,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-0.11.0_169ebce2ab52c290dfb32eb74dd65d254370652c.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-imagepipeline-okhttp3-0.11.0_169ebce2ab52c290dfb32eb74dd65d254370652c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -242,7 +242,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_66ef66aabb1b7e80a183a666a6f69df1ca6207ca.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-10.0.1_66ef66aabb1b7e80a183a666a6f69df1ca6207ca.jar" />
     </item>
     <item
         is-multidex="false"
@@ -251,7 +251,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_569ef1c89363e4234377f5c2944165cbcff4b310.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-10.0.1_569ef1c89363e4234377f5c2944165cbcff4b310.jar" />
     </item>
     <item
         is-multidex="false"
@@ -260,7 +260,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_ae51f6cd6812a2eb355e9b670ebdb4193461f058.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\internal_impl-24.0.0_ae51f6cd6812a2eb355e9b670ebdb4193461f058.jar" />
     </item>
     <item
         is-multidex="false"
@@ -269,7 +269,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-0.11.0_164c97d25d35f1a9939b05b54e5415930565c59a.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-fresco-0.11.0_164c97d25d35f1a9939b05b54e5415930565c59a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -278,7 +278,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_bc811ba619a635ffc825c9343304672d6ced469e.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-10.0.1_bc811ba619a635ffc825c9343304672d6ced469e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -287,7 +287,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="53df71a373e68311fc2c587aa814db7f366ace95">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.10.1_f54217aab1114be5a8d8579d5cabf6da63ee51e1.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.android-facebook-android-sdk-4.10.1_f54217aab1114be5a8d8579d5cabf6da63ee51e1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -296,7 +296,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.4.1_4dc6f06577b4676c4a97d1130f5b743afd93f5a0.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\okhttp-urlconnection-3.4.1_4dc6f06577b4676c4a97d1130f5b743afd93f5a0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -305,7 +305,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-0.11.0_9812213dd602a7e47a01cc250c023c709cb6b780.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.fresco-fbcore-0.11.0_9812213dd602a7e47a01cc250c023c709cb6b780.jar" />
     </item>
     <item
         is-multidex="false"
@@ -314,7 +314,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_975231618808eefeaaf455cdd90c0dc1b594b91b.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\com.facebook.soloader-soloader-0.1.0_975231618808eefeaaf455cdd90c0dc1b594b91b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -323,7 +323,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_3f5e9ae02fe0ae33559b0e6f0cfeb38920cfa6e0.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\staticlayout-proxy-1.0_3f5e9ae02fe0ae33559b0e6f0cfeb38920cfa6e0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -332,7 +332,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_1b20bca1f3e9be73f565bf6fcc397bdb87e5a675.jar" />
+        <dex dex="C:\CodigoFonte\reactiveNative\AppBalada\android\app\build\intermediates\pre-dexed\release\okhttp-3.4.1_1b20bca1f3e9be73f565bf6fcc397bdb87e5a675.jar" />
     </item>
 
 </items>

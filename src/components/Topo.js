@@ -26,7 +26,7 @@ export default class Topo extends Component {
     // }, function(err) {
     //   console.log(err); // Error: "It broke"
     // });
-    return auth.currentUser.photoURL == null ? 'https://s3.amazonaws.com/convertflow/uploads/4e5effb9-0ef6-4975-ad75-1fd20c051e78/NoPhoto_icon-user-default.png' :  auth.currentUser.photoURL;
+    return auth.currentUser.photoURL == null ? 'https://firebasestorage.googleapis.com/v0/b/agendabox-72bc2.appspot.com/o/NoPhoto_icon-user-default.png?alt=media&token=a3c89af6-759b-47a7-86e0-f6cdb2474965' :  auth.currentUser.photoURL;
   }
 
     render() {

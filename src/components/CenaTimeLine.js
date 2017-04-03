@@ -104,9 +104,11 @@ listarDados(filter){
         );
      } else {
       //Lista as mais recentes
-         evento.forEach((childSnapshot) => {
+        if(this.state.eventos != []){
+            evento.forEach((childSnapshot) => {
             listagemEventos.push(childSnapshot);
          });
+        }
          
      }
      this.setState({ eventos : listagemEventos});
@@ -145,6 +147,22 @@ listarDados(filter){
  returnYear(date){
     var res = String(date).split("/");
     return String(res[2]).toString().substr(2,2);
+ }
+
+ returnEventsListView(){
+
+    if(this.state.eventos.length > 0){
+       return (  
+             <ListView
+             data={this.state.eventos}
+             renderRow={eventos => this.renderRow(eventos)}
+             />
+             );
+    } else {
+      return (
+          <Text style={{color: 'white', margin: 15}}>Nenhum evento foi encontrado!</Text>
+        );
+    }
  }
 
   // getEventos() {
@@ -213,12 +231,8 @@ listarDados(filter){
           <Filtro  filterUser={this.filterUser} />
         </View>
         <Screen style={{flex: 8, backgroundColor: 'black'}}>
-          <ListView
-          data={this.state.eventos}
-          renderRow={eventos => this.renderRow(eventos)}
-          />
+            {this.returnEventsListView()}
         </Screen>
-       
       </View>
       
     );
