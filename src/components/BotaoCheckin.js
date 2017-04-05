@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet,  Text,  View, TouchableHighlight, Image } from 'react-native';
+import { StyleSheet,  Text,  View, TouchableHighlight, Image, Modal } from 'react-native';
 import {firebaseRef, auth} from '../FirebaseConfig'
 import { Actions } from 'react-native-router-flux';
 import {FBLogin, FBLoginManager} from 'react-native-facebook-login';
@@ -10,10 +10,17 @@ const imgLiked = require('../imgs/bt-central.png');
 export default class botaoLike extends Component {
   constructor(props){
     super(props);
-    this.state = { Checkedin : false}
+    this.state = { Checkedin : false};
+    this.state = {modalVisible : false};
    }
 
+  setModalVisible(visible) {
+    this.setState({modalVisible: visible});
+  }
+
    componentWillMount() {
+    this.setModalVisible(false);
+    
       const usuarioAtual = auth.currentUser;
       var refData = firebaseRef.child('user/'+ usuarioAtual.uid);
       refData.on('value',(snapshot) => {
@@ -41,6 +48,7 @@ export default class botaoLike extends Component {
    }
   
   actionCheckedinBtn(){
+      this.setModalVisible(false);
       var evCheckin = 0;
       var refDataEvento = firebaseRef.child('eventos/'+ this.props.evID);
       refDataEvento.on('value',(snapshot) => {
@@ -83,7 +91,7 @@ export default class botaoLike extends Component {
       return (
         <View style={{backgroundColor: 'transparent'}}>
           <TouchableHighlight style={{opacity: 0.5}}
-             onPress={() => {this.actionCheckedinBtn()}}
+             onPress={() => {this.setModalVisible(!this.state.modalVisible)}}
              underlayColor={'transparent'}
              activeOpacity={0.5}
              disabled= {this.disableCheckin()}
@@ -95,14 +103,45 @@ export default class botaoLike extends Component {
     }else{
       return (
         <View>
-          <TouchableHighlight 
-             onPress={() => {this.actionCheckedinBtn()}}
-             underlayColor={'transparent'}
-             activeOpacity={0.5}
-             disabled= {this.disableCheckin()}
-             >
-             <Image source={imgLike} style={{width: 70, height: 59, backgroundColor: 'transparent'}}/>
-          </TouchableHighlight>        
+          <View >
+             <Modal 
+                animationType={"slide"}
+                transparent={true}
+                visible={this.state.modalVisible}
+                onRequestClose={() => {alert("Modal has been closed.")}}
+                >
+                   <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                    <View style={{backgroundColor: '#303030',height: 100, width: 200, alignItems: 'center', borderRadius: 15}}>
+                      <View>
+                        <TouchableHighlight style={styles.btnComprar}
+                          onPress={() => {
+                          this.actionCheckedinBtn()
+                        }}>
+                          <Text style={styles.txtComprar}>FAZER CHECK-IN</Text>
+                        </TouchableHighlight>
+                      </View>
+                      <View style={{paddingTop: 10}}>
+                        <TouchableHighlight style={styles.btnCancelar}
+                          onPress={() => {
+                          this.setModalVisible(!this.state.modalVisible)
+                        }}>
+                          <Text style={styles.txtCancelar}>Cancelar</Text>
+                        </TouchableHighlight>
+                      </View>
+                      </View>
+                   </View>
+            </Modal>
+          </View>
+          <View>
+            <TouchableHighlight 
+               onPress={() => {this.setModalVisible(!this.state.modalVisible)}}
+               underlayColor={'transparent'}
+               activeOpacity={0.5}
+               disabled= {this.disableCheckin()}
+               >
+               <Image source={imgLike} style={{width: 70, height: 59, backgroundColor: 'transparent'}}/>
+            </TouchableHighlight>        
+          </View>
         </View>
       );
     }
@@ -111,5 +150,31 @@ export default class botaoLike extends Component {
 }
 
 const styles = StyleSheet.create({
- 
+ btnComprar: {
+  backgroundColor: '#EE2B7A',
+  width: 150,
+  alignItems: 'center',
+  padding: 10,
+  borderRadius: 30,
+  marginTop: 10
+},
+txtComprar: {
+  color: 'white',
+  fontWeight: 'bold',
+  fontSize: 12
+},
+btnCancelar: {
+  backgroundColor: 'transparent',
+  width: 125,
+  alignItems: 'center',
+  padding: 5,
+  borderRadius: 30,
+  borderWidth: 1,
+  borderColor: '#737373'
+},
+txtCancelar: {
+  color: '#737373',
+  fontWeight: 'bold',
+  fontSize: 12
+}
 });

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet,  Text,  View, TouchableHighlight, ScrollView, Select, Option, 
-         TouchableOpacity, Clipboard, ToastAndroid, AlertIOS, Platform 
+         TouchableOpacity, Clipboard, ToastAndroid, AlertIOS, Platform
        } from 'react-native';
 import {firebaseRef, auth} from '../FirebaseConfig'
 import { Image,  ListView,  Tile,  Title,  Subtitle,  Screen} from '@shoutem/ui';
@@ -349,7 +349,7 @@ returnCheckins(){
           </ScrollView>
         </View>
         <View style={styles.rodape}>
-			<Rodape evID={this.state.evento.evID}/>
+			   <Rodape evID={this.state.evento.evID}/>
        </View>
       </View>
      
